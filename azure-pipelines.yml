@@ -26,6 +26,12 @@ steps:
 
 - task: CopyFiles@2
   inputs:
+    contents: '**/vss-extension.json'
+    targetFolder: '$(build.artifactStagingDirectory)'
+  displayName: Copy vss-extension.json file to artifact staging directory
+
+- task: CopyFiles@2
+  inputs:
     contents: '**/*.vsix'
     targetFolder: '$(build.artifactStagingDirectory)'
   displayName: Copy .vsix files to artifact staging directory
