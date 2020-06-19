@@ -23,3 +23,17 @@ steps:
 - script: |
     tfx extension create
   displayName: 'Publish'
+
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.vsix'
+    targetFolder: '$(build.artifactStagingDirectory)'
+  displayName: Copy .vsix files to artifact staging directory
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(build.artifactStagingDirectory)'
+    artifactName: 'drop'
+    artifactType: 'container'
+  displayName: Publish artifacts
+
