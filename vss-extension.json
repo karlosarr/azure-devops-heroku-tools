@@ -1,0 +1,57 @@
+{
+    "manifestVersion": 1,
+    "id": "heroku-tools",
+    "publisher": "karlosarr",
+    "version": "1.0.0",
+    "name": "Azure DevOps Heroku Tools",
+    "description": "Tasks for Heroku deployment.",
+    "public": false,
+    "categories": ["Azure pipelines"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "heroku.png"
+    },
+    "files": [
+        {
+          "path": "tasks/pushToHeroku"
+        }
+      ],
+      "content": {
+        "details": {
+          "path": "vss-extension-details.md"
+        }
+      },
+      "contributions": [
+        {
+          "id": "pushu-to-heroku",
+          "type": "ms.vss-distributed-task.task",
+          "targets": [
+            "ms.vss-distributed-task.tasks"
+          ],
+          "properties": {
+            "name": "tasks/pushToHeroku"
+          }
+        }
+      ],
+      "links": {
+        "home": {
+          "uri": "https://github.com/karlosarr/azure-devops-heroku-tools"
+        },
+        "getstarted": {
+          "uri": "https://github.com/karlosarr/azure-devops-heroku-tools"
+        },
+        "issues": {
+          "uri": "https://github.com/karlosarr/azure-devops-heroku-tools"
+        },
+        "license": {
+          "uri": "https://github.com/karlosarr/azure-devops-heroku-tools"
+        },
+        "repository": {
+          "uri": "https://github.com/karlosarr/azure-devops-heroku-tools"
+        }
+      }
+}

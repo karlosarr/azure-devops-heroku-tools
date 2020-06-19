@@ -1,0 +1,24 @@
+{
+  "name": "azure-devops-heroku-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlosarr/azure-devops-heroku-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlosarr/azure-devops-heroku-tools/issues"
+  },
+  "homepage": "https://github.com/karlosarr/azure-devops-heroku-tools#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.5",
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
