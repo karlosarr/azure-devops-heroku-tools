@@ -25,6 +25,10 @@ steps:
   displayName: 'Create extention'
 
 - script: |
+    echo $(TOKEN)
+  displayName: 'test'
+
+- script: |
     tfx extension publish -t $(TOKEN)
   displayName: 'Create publish'
 
