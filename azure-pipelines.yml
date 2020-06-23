@@ -29,7 +29,7 @@ steps:
   displayName: 'test'
 
 - script: |
-    tfx extension publish -t $(TOKEN)
+    tfx login --service-url https://account.visualstudio.com/DefaultCollection -t $(TOKEN)
   displayName: 'Create publish'
 
 - script: |
