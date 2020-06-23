@@ -25,8 +25,8 @@ steps:
   displayName: 'Create extention'
 
 - script: |
-    tfx extension publish -t %TOKEN%
-  displayName: 'Create extention'
+    tfx extension publish -t $(TOKEN)
+  displayName: 'Create publish'
 
 - script: |
     tfx extension publish
