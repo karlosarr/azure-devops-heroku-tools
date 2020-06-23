@@ -22,7 +22,15 @@ steps:
 
 - script: |
     tfx extension create
-  displayName: 'Publish'
+  displayName: 'Create extention'
+
+- script: |
+    tfx extension publish -t %TOKEN%
+  displayName: 'Create extention'
+
+- script: |
+    tfx extension publish
+  displayName: 'Create extention'
 
 - task: CopyFiles@2
   inputs:
