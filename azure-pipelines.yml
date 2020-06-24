@@ -29,7 +29,7 @@ steps:
   displayName: 'test'
 
 - script: |
-    tfx login login --service-url https://karlosarr.VisualStudio.com --authType pat --token $(TOKEN)
+    tfx login --service-url https://karlosarr.VisualStudio.com --authType pat --token $(TOKEN)
   displayName: 'Create login'
 
 - script: |
