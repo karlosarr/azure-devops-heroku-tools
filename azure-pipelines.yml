@@ -33,7 +33,7 @@ steps:
 #  displayName: 'Create login'
 
 - script: |
-    tfx extension publish --token $(TOKEN)
+    tfx extension publish --token $(TOKEN) --trace-level debug
   displayName: 'Create publish'
 
 - task: CopyFiles@2
