@@ -25,15 +25,15 @@ steps:
   displayName: 'Create extention'
 
 - script: |
-    echo $TOKEN
+    echo $(TOKEN)
   displayName: 'test'
 
-- script: |
-    tfx login --service-url https://account.visualstudio.com/DefaultCollection -t $TOKEN
-  displayName: 'Create login'
+#- script: |
+#    tfx login --service-url https://account.visualstudio.com/DefaultCollection -t $(TOKEN)
+#  displayName: 'Create login'
 
 - script: |
-    tfx extension publish
+    tfx extension publish --token $(TOKEN)
   displayName: 'Create publish'
 
 - task: CopyFiles@2
