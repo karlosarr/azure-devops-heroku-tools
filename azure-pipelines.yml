@@ -33,7 +33,7 @@ steps:
   displayName: 'Create login'
 
 - script: |
-    tfx extension publish --manifest-globs vss-extension.json --share-with account --token $(TOKEN) --trace-level debug
+    tfx extension publish --authType pat --token $(TOKEN) --trace-level debug
   displayName: 'Create publish'
 
 - task: CopyFiles@2
