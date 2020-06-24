@@ -28,9 +28,9 @@ steps:
     echo $(TOKEN)
   displayName: 'test'
 
-#- script: |
-#    tfx login --service-url https://account.visualstudio.com/DefaultCollection -t $(TOKEN)
-#  displayName: 'Create login'
+- script: |
+    tfx login login --service-url https://karlosarr.VisualStudio.com --authType pat --token $(TOKEN)
+  displayName: 'Create login'
 
 - script: |
     tfx extension publish --manifest-globs vss-extension.json --share-with account --token $(TOKEN) --trace-level debug
