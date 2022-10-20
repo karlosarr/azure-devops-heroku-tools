@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/karlosarr/azure-devops-heroku-tools#readme",
   "dependencies": {
-    "azure-pipelines-task-lib": "^2.9.5",
+    "azure-pipelines-task-lib": "^3.3.1",
     "vss-web-extension-sdk": "^5.141.0"
   }
 }
